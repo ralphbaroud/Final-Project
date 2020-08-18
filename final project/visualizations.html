@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    
+    <title>Gold Rush</title>
+
+   
+</head>
+		
+<body>
+	
+
+	<div class="wrapper bg-white">
+	
+		<header class="bg-light">
+			<div class="container">
+				<div class="headerBand  w-100"></div>
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<a class="navbar-brand pl-2 pr-2 text-white font-weight-bold bg-primary" href="index.html">GOLD RUSH</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="terms.html">Definition of Terms</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="data.html">Data</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="visualizations.html">Visualizations</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle dropdownHover" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Market Prediction Models
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<li><a class="dropdown-item" href="pre-training.html">Pre-Coronavirus Training</a></li>
+									<li><a class="dropdown-item" href="post-training.html">Post-Coronavirus Training</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+   
+		<div class="container mt-5 mb-5">
+			<div class="row row-eq-height">
+			
+				<!-- Left Content Box -->
+				<div class="col-12">
+					<div class="bg-light p-4 border">
+						<h3 class="text-primary">Visualizations</h3>
+						<hr class="mb-4 mt-4">
+						<div class="container visualcontainer">
+							<div class="row">
+								<div class="col-12 mt-2">
+									<h5 class="text-secondary">Yield</h5>
+									<div id="yield10" class="w-100 d-flex justify-content-center"></div>
+								</div>
+								<div class="col-12 mt-2">
+									<h5 class="text-secondary">S&P 500</h5>
+									<div id="sp500" class="w-100 d-flex justify-content-center"></div>
+								</div>
+								<div class="col-12 mt-2">
+									<h5 class="text-secondary">NASDAQ 100</h5>
+									<div id="nasdaq" class="w-100 d-flex justify-content-center"></div>
+								</div>
+								<div class="col-12 mt-2">
+									<h5 class="text-secondary">Dollar</h5>
+									<div id="dollar" class="w-100 d-flex justify-content-center"></div>
+								</div>
+								<div class="col-12 mt-2">
+									<h5 class="text-secondary">Gold</h5>
+									<div id="gold" class="w-100 d-flex justify-content-center"></div>
+								</div>
+								<div class="col-12 mt-2">
+									<h5 class="text-secondary">Money Supply</h5>
+									<div id="moneySupp" class="w-100 d-flex justify-content-center"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+		
+		
+		<footer class="bg-dark border-primary pt-3 pb-3">
+			<div class="container">
+				<div class="footer-copyright text-center text-white float-left">&copy; GOLD RUSH PROJECT 2020</div>
+				<a href="disclaimer.html" class="text-white float-right">Disclaimer</a>
+				<a href="team.html" class="text-white float-right mr-5">Team Members</a>
+			</div>
+		</footer>
+    
+	</div><!--wrapper-->
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="js/d3.js"></script>
+	<script src="js/dollar.js"></script>
+	<script src="js/gold.js"></script>
+	<script src="js/moneySupp.js"></script>
+	<script src="js/nasdaq.js"></script>
+	<script src="js/sp500.js"></script>
+	<script src="js/yield10.js"></script>
+	
+
+	
+</body>
+</html>

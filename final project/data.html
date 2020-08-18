@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <title>Gold Rush</title>
+
+   
+</head>
+		
+<body>
+	
+
+	<div class="wrapper bg-white">
+	
+		<header class="bg-light">
+			<div class="container">
+				<div class="headerBand  w-100"></div>
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<a class="navbar-brand pl-2 pr-2 text-white font-weight-bold bg-primary" href="index.html">GOLD RUSH</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="terms.html">Definition of Terms</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="data.html">Data</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="visualizations.html">Visualizations</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle dropdownHover" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Market Prediction Models
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<li><a class="dropdown-item" href="pre-training.html">Pre-Coronavirus Training</a></li>
+									<li><a class="dropdown-item" href="post-training.html">Post-Coronavirus Training</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+   
+		<div class="container mt-5 mb-5">
+		  <div class="row mt-5 bg-white">
+			<div class="col-lg-10 col-md-12">
+			  <div id="table-area" class="">
+					<table id="tableInfo" class="table table-striped">
+					  <thead>
+						<tr>
+						  <th class="table-head ">Date</th>
+						  <th class="table-head ">Yield</th>
+						  <th class="table-head ">S&P 500</th>
+						  <th class="table-head ">NASDAQ 100</th>
+						  <th class="table-head ">Bloomberg Index</th>
+						  <th class="table-head ">Gold Price</th>
+						  <th class="table-head ">M2 Money Supply</th>
+						</tr>
+					  </thead>
+					  <tbody id='table-body' class="text-center"></tbody>
+					</table>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+		
+		<footer class="bg-dark border-primary pt-3 pb-3">
+			<div class="container">
+				<div class="footer-copyright text-center text-white float-left">&copy; GOLD RUSH PROJECT 2020</div>
+				<a href="disclaimer.html" class="text-white float-right">Disclaimer</a>
+				<a href="team.html" class="text-white float-right mr-5">Team Members</a>
+			</div>
+		</footer>
+
+    
+	</div><!--wrapper-->
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="js/d3.js"></script>
+	<script src="js/data.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>
